@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Água no Campo - Agro Forte e Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>💧 Água no Campo</h1>
+            <p>Equilíbrio entre produção e meio ambiente</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#sobre">Sobre</a>
+            <a href="#importancia">Importância</a>
+            <a href="#dicas">Dicas Práticas</a>
+            <a href="#interativo">Calculadora</a>
+            <a href="#quiz">Quiz</a>
+        </div>
+    </nav>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>O Desafio da Água na Agricultura</h2>
+            <p>A agricultura é responsável por cerca de <strong>70% do consumo de água doce</strong> no mundo. No Brasil, esse número pode chegar a 80% em algumas regiões. Produzir mais alimento sem esgotar nossos recursos hídricos é o grande desafio do agro sustentável.</p>
+            <img src="https://images.unsplash.com/photo-1625246333197-6c2e5f8c1e0e?w=800" alt="Irrigação no campo" class="img-responsive">
+        </div>
+    </section>
+
+    <section id="importancia" class="section bg-green">
+        <div class="container">
+            <h2>Por que isso importa?</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>🌱 Produção</h3>
+                    <p>Mais eficiência = mais alimento com menos água</p>
+                </div>
+                <div class="card">
+                    <h3>🌍 Meio Ambiente</h3>
+                    <p>Preservação de rios, nascentes e lençóis freáticos</p>
+                </div>
+                <div class="card">
+                    <h3>💰 Economia</h3>
+                    <p>Redução de custos com energia e água para o produtor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="dicas" class="section">
+        <div class="container">
+            <h2>Dicas Práticas para o Produtor</h2>
+            <ul class="dicas-list">
+                <li>✅ Irrigação por gotejamento ou pivô central com sensores</li>
+                <li>✅ Monitoramento de umidade do solo</li>
+                <li>✅ Plantio em horários de menor evaporação</li>
+                <li>✅ Uso de cobertura morta para reter umidade</li>
+                <li>✅ Reaproveitamento de água da chuva</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="interativo" class="section bg-green">
+        <div class="container">
+            <h2>Calculadora de Economia de Água</h2>
+            <div class="calculator">
+                <label>Área da lavoura (em hectares):</label>
+                <input type="number" id="area" value="10" min="1">
+                
+                <label>Tipo de irrigação:</label>
+                <select id="irrigacao">
+                    <option value="1.0">Convencional (aspersão)</option>
+                    <option value="0.6">Gotejamento</option>
+                    <option value="0.4">Pivô com sensores</option>
+                </select>
+                
+                <button onclick="calcularEconomia()">Calcular Economia</button>
+                <p id="resultado" class="resultado"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="section">
+        <div class="container">
+            <h2>Teste seus Conhecimentos</h2>
+            <div id="quiz-container">
+                <p id="pergunta">Carregando pergunta...</p>
+                <div id="opcoes"></div>
+                <button id="proxima" onclick="proximaPergunta()" style="display:none;">Próxima pergunta</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><strong>Projeto Agrinho 2026</strong> - Uso Consciente da Água na Agricultura</p>
+            <p>Desenvolvido por [SEU NOME] • [SUA ESCOLA] • 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
