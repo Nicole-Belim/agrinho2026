@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #2e7d32, #4caf50);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #1b5e20;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #4caf50;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.bg-green {
+    background-color: #e8f5e9;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1b5e20;
+    font-size: 2.2rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.dicas-list {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
+
+.dicas-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.calculator {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.calculator button {
+    background: #2e7d32;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.calculator button:hover {
+    background: #1b5e20;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #2e7d32;
+}
+
+.img-responsive {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 12px;
+    margin: 20px auto;
+    display: block;
+}
+
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.3rem;
+    }
+}
